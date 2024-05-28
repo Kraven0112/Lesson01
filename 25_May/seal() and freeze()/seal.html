@@ -1,0 +1,23 @@
+<script>
+    // Object.seal(Object_name)- this method  allow modification in object properties but doesn't allow to delete properties and doesn't to add properties in an object after sealed an object
+    const user={
+        firstName:"Sushil",
+        lastName:"Chaudhary",
+        age:20,
+        country:"Nepal"
+    }
+    Object.seal(user)
+
+    //modifying an object's properties and value. And modification of object's properties is accepted by seal()
+    user.firstName="Punam Chaudhary"
+    user.age=18
+
+    //Addition of properties in an object . But addition of properties is not allowed after sealed the object.
+    user.village="Bhakunda" //No changes
+    user.municipality="Belauri" //No changes 
+
+
+    //Deletion of properties from na object
+    delete user.age //No changes 
+    delete user.country //No changes
+</script> 

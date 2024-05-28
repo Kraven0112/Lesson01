@@ -1,0 +1,100 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+h1{
+    text-align: center;
+    background-image: url(https://images.unsplash.com/photo-1530533718754-001d2668365a?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fGJsdWV8ZW58MHx8MHx8fDA%3D);
+    background-size: contain;
+    background-clip: text;
+    font-size: 4em;
+    font-weight: bolder;
+    color: transparent;
+}
+.container{
+    display: grid;
+    margin-inline: 20px;
+    padding-bottom: 10px;
+    font-family: sans-serif;
+    font-size: 1.5em;
+    color: white;
+    grid-template:
+    "green"
+    "maroon "
+    "magenta "
+    " yellow"
+    "blue";
+}
+.container .box{
+ text-align: justify;
+ /* text-justify: inter-word; */
+display: flex;
+align-items: center;
+justify-content: center;
+padding: 20px;
+min-height: 200px;
+border-radius: 10px;
+margin: 10px;
+box-shadow: 5px 5px 20px 5px ;
+}
+.box-1{
+   grid-area: green;
+   background-color: green;
+}
+.box-2{
+   grid-area: blue;
+   background-color: blue;
+}
+
+.box-3{
+    grid-area: maroon;
+    background-color: maroon;
+}
+.box-4{
+    grid-area: magenta;
+    background-color: magenta;
+}
+.box-5{
+    grid-area: yellow;
+    background-color: rgb(180, 180, 75);
+   
+}
+@media(min-width:320) and (max-width:425px)
+{
+    .container{
+        grid-template:
+    "green"
+    "maroon "
+    "magenta "
+    " yellow"
+    "blue";
+    }
+}
+@media (min-width:426px) and (max-width:768px){
+    .container{
+        grid-template:
+        "green green green"
+        "maroon maroon blue"
+        "magenta magenta blue"
+        " yellow yellow  yellow";
+    }
+}
+@media (min-width:769px) and (max-width:1024px){
+    .container{
+        grid-template:
+        " yellow yellow  yellow"
+        "green green magenta"
+        "blue blue magenta"
+        " maroon maroon maroon";
+    }
+}
+@media (min-width:1025px) and (max-width:1440px){
+    .container{
+        grid-template: 
+        "magenta magenta magenta"
+        "yellow yellow maroon"
+        "green green maroon"
+        "blue blue blue";
+    }
+}

@@ -1,0 +1,28 @@
+<script>
+    const numbers = [200, 50, 200,25];
+
+    const result = numbers.reduceRight(myFunc);
+
+// In this function total is 25 because reduceRight method is assigning right or last element as total and substracting all items from right or last element.
+function myFunc(total, num) { 
+  return total - num;
+} 
+console.log(result); //Expected output is -425
+
+
+
+
+
+const result2 = numbers.reduce(myFun1)
+// In this function total is 200 because reduce method is assigning  left or first element as a total and substracing all items from first or left element. 
+function myFun1(total,num)
+{
+    return total-num
+}
+console.log(result2); //Expected output is -75
+
+
+
+const result3=numbers.reverse()
+console.table(result3);//Expected output is [25,200,50,200]
+</script>

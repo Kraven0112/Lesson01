@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      .container::after{
+        width:200px;
+        height: 200px;
+        background-color: green;
+        content: "Hey boy";
+      }
+      .container::before{
+        width:200px;
+        height: 200px;
+        background-color: red;
+        content: "Hey girl";
+      }
+      .main{
+        width: 20%;
+        height: 50vh;
+        background-color: crimson;
+        animation: block 5s;
+      }
+      @keyframes block {
+        from{width: 20%;}
+        to{width: 100%;}
+      }
+      
+    </style>
+</head>
+<body>
+   <div class="container">
+    Decorate
+   </div>
+   <div class="main">
+
+   </div>
+</body>
+</html>

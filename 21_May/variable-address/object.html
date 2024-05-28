@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            width: 400px;
+            border: 2px solid;
+            text-align: justify;
+            /* text-justify: inter-word; */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae numquam cupiditate nam autem non 
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquid pariatur perspiciatis exercitationem nesciunt. Ea et, architecto recusandae rem, veniam ipsam voluptatum facere distinctio atque facilis ipsa mollitia totam, a expedita.accusamus ipsam ratione voluptas ab consequuntur?
+    </div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- The addresses of empty strings are same -->
+
+<!-- But the addresses of empty object are not same, all empty objects have different addresses. -->
+
+<!-- If we compare two objects like:
+
+   fruit===fruit1 
+
+   it will gives false because address of both objects are different. -->
+
+<!-- If we compare 
+    fruit.userAge===fruit1.userAge
+    then it will give true, because both userAge have same address in the memory. 
+ -->
+<script>
+    const got='Salman'
+    const fruit={
+       ' user-Name':'Sushil',
+        userAge:20,
+        gender:'male'
+    }
+
+    const fruit1={
+        userName:'Krishna',
+        userAge:20,
+        gender:'male',
+        Salman:'developer'
+    }
+    console.log(fruit1[got]); //it will give developer as an output.
+
+    console.log(fruit[" user-Name"]); 
+    console.log(fruit1["user"+"Name"])
+
+    const fruit2={
+        userName:'RamKrishna'
+    }
+
+    //adding in object fruit2
+    fruit2["last-Name"]='Datta' //it is called bracket notation
+
+    fruit2.age=25 //it is called dot notation
+</script>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Stopwatch</title>
+</head>
+<body>
+    <div class="container">
+        <div class="timer">
+            <h1 id="show">00:00:00:000</h1>
+        </div>
+        <div class="btn">
+            <button  id="start">Start</button>
+            <button  id="stop">Stop</button>
+            <button  id="reset">Reset</button>
+        </div>
+    </div>
+
+    <script>
+       function get()
+       {
+        let display = document.getElementById("show")
+        let stop= document.getElementById("stop")
+        let start= document.getElementById("start")
+        let reset= document.getElementById("reset")
+        let second =0
+        let minute=0
+        let hour=0
+        let milisec=0
+         
+        if(milisec==9)
+        {
+            second++
+            milisec=0
+        }
+       }
+    </script>
+</body>
+</html>

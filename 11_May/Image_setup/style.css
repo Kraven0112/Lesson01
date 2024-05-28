@@ -1,0 +1,101 @@
+h1{
+    font-size: 2rem;
+    text-align: center;
+    font-family: sans-serif;
+    font-weight: bolder;
+    text-shadow: 5px 5px 5px rgba(216, 8, 171, 0.3);
+    color: blue;
+    background-image: url(./01.jpeg);
+    background-size: contain;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin: 10px;
+}
+h1:hover{
+    font-size: 4rem;
+}
+h2{
+    font-size:2rem;
+    font-weight: bolder;
+    font-family: sans-serif;
+    margin: 10px;
+}
+.sanam{
+    background-image: url(./01.jpeg);
+    background-size: contain;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.sanam:hover{
+    font-size: 4rem;
+}
+.punam{
+    background-image: url(./02.jpeg);
+    background-size: contain;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.punam:hover{
+    font-size: 4rem;
+}
+.deepak{
+    background-image: url(./03.jpeg);
+    background-size: contain;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.deepak:hover{
+    font-size: 4rem;
+}
+.kalpana{
+    background-image: url(./04.jpeg);
+    background-size: contain;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.kalpana:hover{
+    font-size: 4rem;
+}
+.ramita{
+    background-image: url(./05.jpeg);
+    background-size: contain;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.ramita:hover{
+    font-size: 4rem;
+}
+.naresh{
+    background-image: url(./06.jpeg);
+    background-size: contain;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.naresh:hover{
+    font-size: 4rem;
+}
+.dinesh{
+    background-image: url(./07.jpeg);
+    background-size: contain;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.dinesh:hover{
+    font-size: 4rem;
+}
+.samjhana{
+    background-image: url(./08.jpeg);
+    background-size: contain;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.samjhana:hover{
+    font-size: 4rem;
+}
+
+
+
+
+
+
+

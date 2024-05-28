@@ -1,0 +1,90 @@
+*{
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+.container{
+    width: 100%;
+    /* margin: 8px; */
+}
+.container .header{
+    width: 100%;
+    background-color: black;
+    color: white;
+    padding: 10px;
+    border-radius: 8px;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.container .header button{
+    border-radius: 5px;
+    /* border: none; */
+}
+.container .header button a{
+    text-decoration: none;
+    font-size: 1rem;
+    color: white;
+}
+.container .header #btn1{
+    background-color: rgb(49, 47, 47);
+}
+.container .header #btn2{
+    background-color: blue;
+}
+.search{
+    width: 100%;
+    background-color: #dadbf1;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    padding-bottom: 50px;
+    font-size: 1.5rem;
+}
+.search h1{
+    text-align: center;
+    color: rgb(50, 37, 37);
+}
+.search input{
+    min-width: 500px;
+    min-height: 50px;
+    border-radius: 5px;
+    font-size: 1em;
+}
+.first{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 30px;
+}
+.first .ft1 img{
+    float: left;
+}
+.first .ft1 .text1{
+    font-size: 2rem;
+    font-weight: bold;
+}
+.first .ft2 img{
+    float: left;
+}
+.first .ft2 .text2{
+    font-size: 2rem;
+    font-weight: bold;
+}
+@media(min-width:320px) and (max-width:425px)
+{
+    .container{
+        width: 100%;
+    }
+    .container .header{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .search h1{
+        font-size:1rem;
+        text-align: center;
+        color: rgb(50, 37, 37);
+    }
+
+}
+

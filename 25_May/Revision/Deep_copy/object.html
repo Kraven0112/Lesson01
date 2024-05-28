@@ -1,0 +1,22 @@
+<script>
+    const user1={
+        firstName:'Sushil',
+        lastName:'Chaudhary',
+        permanentAddress:{
+            country:'Nepal',
+            district:'Kanchanpur',
+            municipality:'Belauri',
+            wardNo:5,
+            village:'Bhakunda',
+            province:'SudurPashchim'
+        }
+    }
+    //using deep copy method 
+    const user2=JSON.parse(JSON.stringify(user1))
+
+    user2.firstName="Krishna" //This changes will be in user2 only. Means this changes will never seen in user1.
+    user2.lastName="Rana"
+
+    user1.religion="Hindu" // This changes will be in user1 only. Means this chnages will never seen in user2.
+    user1.caste="Tharu"
+</script>

@@ -1,0 +1,14 @@
+<script>
+      const grocery=[
+        {title:'fruit', name:'Orange' , price:100 , quantity:2},
+        {title:'fruit', name:'apple', price:200 , quantity:3},
+        {title:'vegetable', name:'brocauli', price:100 , quantity:1},
+        {title:'vegetable', name:'carrot', price:150 , quantity:2},
+        {title:'chocolate', name:'sprinkle', price:100 , quantity:200},
+    ]
+    function getting(grocery)
+    {
+        return grocery.price<200
+    }
+    console.table(grocery.find(getting))
+</script>

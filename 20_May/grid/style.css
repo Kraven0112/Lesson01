@@ -1,0 +1,132 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    width: 100%;
+    display: grid;
+    grid-template:
+    "green"
+    "blue"
+    "orange"
+    "red"
+    "maroon"
+    "magenta"
+    "yellow";
+    
+}
+.box{
+    margin: 5px;
+    /* width: 100%; */
+    height:50px;
+    border-radius: 5px;
+
+}
+.box1{
+    background-color: green;
+}
+.box2{
+    background-color: blue;
+}
+.box3{
+    background-color: orange;
+}
+.box4{
+    background-color: red;
+ 
+}
+.box5{
+    background-color: maroon;
+}
+.box6{
+    background-color: magenta;
+}
+.box7{
+    background-color: yellow;
+ 
+}
+
+@media (min-width:320px)
+{
+    .container{
+        display: grid;
+        grid-template:
+        "green"
+        "blue"
+        "orange"
+        "red"
+        "maroon"
+        "magenta"
+        "yellow";
+    }
+    .box{
+        height: 50px;
+    }
+    .box4{
+        grid-area: red;
+        /* width: 100%; */
+        height: 425px;
+    }
+}
+@media (min-width:425px)
+{
+    .container{
+        display: grid;
+        grid-template:
+        "green"
+        "blue"
+        "orange"
+        "red"
+        "maroon"
+        "magenta"
+        "yellow";
+    }
+    .box{
+        height: 50px;
+    }
+    .box4{
+        grid-area: red;
+        /* width: 100%; */
+        height: 425px;
+    }
+}
+@media(min-width:768px)
+{
+    .container{
+        display: grid;
+        grid-template: "green green green"
+        "blue blue blue"
+        "maroon red yellow"
+        "maroon red yellow"
+        "maroon red yellow"
+        "magenta magenta magenta"
+        "orange orange orange";
+        grid-template-columns: 20% 60% 20%;
+    }
+    .box1{
+        grid-area: green;
+    }
+    .box2{
+        grid-area: blue;
+    }
+    .box3{
+        grid-area: orange;
+    }
+    .box4{
+        grid-area: red;
+      
+    }
+    .box5{
+        grid-area: maroon;
+        height: 425px;
+    }
+    .box6{
+        grid-area: magenta;
+    }
+    .box7{
+        grid-area: yellow;
+        height: 425px;
+      
+    }
+}

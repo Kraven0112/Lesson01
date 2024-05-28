@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* There are some tricks to take any div in center of its parent:
+        1.  display:flex;
+            align-items:center;
+            justify-contents:center;
+            height:100vh
+            
+        2. position:absolute;
+            left:50%;
+            top:50%;
+            transform:translate(-50%,-50%);
+
+        3.  position:absolute;
+            margin:auto;
+            inset:0;
+            */
+        body{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+        }
+        .container{
+            width: 300px;
+            height: 350px;
+            border: 2px solid rgb(77, 77, 71);
+            
+        }
+        .sub-container{
+            width: 200px;
+            height: 250px;
+            border: 2px solid #000;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="sub-container">
+
+        </div>
+    </div>
+</body>
+</html>

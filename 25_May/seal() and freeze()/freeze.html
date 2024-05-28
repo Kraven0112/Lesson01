@@ -1,0 +1,25 @@
+<script>
+    // Object.freeze(object_Name)- this method most useful method which is used to prevent any object from modifying,deletion and addition of properties.
+    const user={
+        name:"Sushil Chaudhary",
+        age:20,
+        country:"Nepal",
+        district:"Kanchnapur"
+    }
+    Object.freeze(user) //Nothing will change in an object after it is frozen
+
+
+    //modifying the properties
+    user.name="Punam Chaudhary" // no changes will seen object user
+    user.age=18 //no changes will seen object user
+
+    //adding properties
+    user.province="Susurpashchim" //no changes will seen object user
+    user.municipality="Belauri"//no changes will seen object user
+    user.village="Bhakunda" //no changes will seen object user
+
+
+    //deleting propeerties
+    delete user.age    //It will not be deleted any properties after object is frozen
+    delete user.name    //It will not be deleted any properties after object is frozen
+</script>

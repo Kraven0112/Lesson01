@@ -1,0 +1,42 @@
+<script>
+    const mall1 ={
+        name:'Lulu mall',
+        address:{
+            city:'Bangalore',
+            area:'Rajajinagar',
+            road:'Dr Rajaji Road',
+            state:'Karnataka'
+        }
+    }
+
+    const mall2={}
+    // using object.assign() method - if I change in one object the change will show in both objects.
+    Object.assign(mall2,mall1)
+
+    const mall3 ={
+        name:'Lulu mall',
+        address:{
+            city:'Bangalore',
+            area:'Rajajinagar',
+            road:'Dr Rajaji Road',
+            state:'Karnataka'
+        }
+    }
+        //using shallow copy method - If I change in one object the change will show in both objects.
+        const mall4=mall3
+
+
+        const mall5 ={
+        name:'Lulu mall',
+        address:{
+            city:'Bangalore',
+            area:'Rajajinagar',
+            road:'Dr Rajaji Road',
+            state:'Karnataka'
+        }
+    }
+
+    //using other shallow copy method -If I change in one object the change will show in both objects.
+    const mall6={...mall5}
+
+</script>

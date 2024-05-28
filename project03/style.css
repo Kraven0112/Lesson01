@@ -1,0 +1,80 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    background-color: rgb(135, 196, 222);
+    padding: 20px;
+    flex-wrap: wrap;
+    position: -webkit-sticky;
+    position: sticky;
+    inset: 0px;
+    margin-bottom: 8px;
+}
+.container span {
+    margin-right: 80px;
+    font-size: 1rem;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+.container input{
+    border-radius: 5px;
+    margin-right: 5px;
+}
+.container button{
+    margin-right: 15px;
+    background-color: rgb(177, 177, 222);
+    border-radius: 5px;
+}
+.container a{
+    text-decoration: none;
+    color: rgb(13, 27, 220);
+    font-family: sans-serif;
+    margin-inline: 10px;
+    font-weight: bold;
+}
+.container a:hover{
+    background-color: #fff;
+    border-radius: 2px;
+}
+.first{
+    display: flex;
+}
+.first span{
+    font-size: 1.5rem;
+    padding: 50px;
+    margin-right: 30px;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+.first .img img{
+    border-radius: 40px;
+}
+.project{
+    padding: 50px;
+}
+.project h5{
+    font-size: 2rem;
+    font-family: sans-serif;
+    text-decoration: underline;
+    margin-bottom: 10px;
+}
+.project p{
+    font-size: 1rem;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+.project-1{
+    padding: 50px;
+}
+.project-1 h5{
+    font-size: 2rem;
+    font-family: sans-serif;
+    text-decoration: underline;
+    margin-bottom: 10px;
+}
+.project-1 p{
+    font-size: 1rem;
+    font-weight: bold;
+    margin-bottom: 5px;
+}

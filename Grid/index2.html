@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid present</title>
+    <style>
+        .container{
+            display: grid;
+            /* min-height: 60vh; */
+            grid-template-columns: repeat(5,200px);
+            grid-template-rows: repeat(5,100px);
+            /* background-color: #d2bdd2; */
+            gap: 10px;
+            font-size: 1rem;
+            /* display: flex; */
+            /* flex-wrap: wrap; */
+        }
+        .box-1{
+            background-color: green;
+            grid-column-start: 1;
+            grid-column-end: 3;
+            grid-row-start: 1;
+            grid-row-end: 3;
+          
+        }
+        .box-2{
+            background-color: red;
+            grid-column-start: 3;
+            grid-column-end:4 ;
+            grid-row-start: 1;
+            grid-row-end: 3;
+        }
+        .box-3{
+            background-color: blueviolet;
+            grid-column-start: 4;
+            grid-column-end:5;
+            grid-row-start: 1;
+            grid-row-end: 6;
+        }
+        .box-4{
+            background-color: orange;
+            grid-column-start: 1;
+            grid-column-end:2;
+            grid-row-start: 3;
+            grid-row-end: 6;
+        }
+        .box-5{
+            /* background-color: yellow; */
+            grid-column-start: 2;
+            grid-column-end:4;
+            grid-row-start: 3;
+            grid-row-end: 6;
+            border-radius: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        } .box-5 img{
+            border-radius: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box-1">1</div>
+        <div class="box-2">2</div>
+        <div class="box-3"> <p>Lorem, ipsum dolor sit amet </p> </div>
+        <div class="box-4">4</div>
+        <div class="box-5"><img src="https://images.unsplash.com/photo-1714995348556-c5a6bb6e7102?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw4fHx8ZW58MHx8fHx8" width="400" height="300" alt=""> </div>
+    </div>
+</body>
+</html>

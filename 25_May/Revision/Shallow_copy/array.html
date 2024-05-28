@@ -1,0 +1,20 @@
+<script>
+    const fruit1=["Apple","Banana","Dates","Jackfruit"]
+
+    const fruit2=[]
+    //using Object.assign() method -If I change in one array it will not affect in other array.
+    Object.assign(fruit2,fruit1)
+
+
+    const fruit3=["Apple","Banana","Dates","Jackfruit"]
+
+    //using shallow copy method - If I change in one array the change will show in both array.
+    const fruit4=fruit3
+
+
+
+    const fruit5=["Apple","Banana","Dates","Jackfruit"]
+
+    //using other shallow copy method -If I change in one array it will not affect in other array.
+    const fruit6=[...fruit5]
+</script>

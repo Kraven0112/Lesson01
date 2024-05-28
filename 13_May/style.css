@@ -1,0 +1,30 @@
+:root{
+    --bgc01:blue;
+    --bgc02:green;
+    --font-color--01:white;
+    --font-color--02:red;
+    --border-radius01:5px;
+    --border-radius02:10px;
+    --border-radius03:20px;
+    --border-radius04:25px;
+    --font-family:sans-serif;
+    --border:2px solid black;
+    --font-weight:bolder;
+
+}
+h1{
+    text-align: center;
+    font-family: var(--font-family);
+    text-decoration: underline;
+}
+.container{
+    font-family: var(--font-family);
+}
+.container p{
+    font-weight: var(--font-weight);
+}
+.container input{
+    background-color: var(--bgc02 );
+    border-radius: var(--border-radius01);
+    color: var(--font-color--01);
+}

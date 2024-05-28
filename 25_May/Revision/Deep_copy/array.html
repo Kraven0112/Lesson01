@@ -1,0 +1,12 @@
+<script>
+  const allThing1 = ["Apple", "Banana", "Graes", "Dates",
+   ["Cow","Goat","Dog","Cat"],
+   ["Lion","Giraffe","Leopard","Deer"]
+  ]
+
+  //using deep copy method -If I make changes in one array the changes will remain in one it will nener effect to other array
+  const allThing2=JSON.parse(JSON.stringify(allThing1))
+
+  allThing2.push("Jackfruit") //This change will remain in allThing2 only. It will never change in allThing1
+  allThing1.push("Orange")    //This change will remain in allThing1 only. It will nwver change in allThing2
+</script>

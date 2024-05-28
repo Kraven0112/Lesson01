@@ -1,0 +1,30 @@
+<script>
+    // We can multiple properties in any objects and also can creates multiple properties in each parent properties of objects.
+    const personalInfo={
+        firtName:'Sushil',
+        lastName:'Chaudhary',
+        age:20,
+        address:{
+            city:'Bangalore',
+            state:'Karnataka',
+            area:'Rajajinagar',
+            pgName:'Golden-Villa pg-2',
+            building:{
+               'buildingno.':2,
+                floor:7,
+                near:'Zolo-Valencia pg'
+            }
+        }
+    }
+
+
+
+    Object.seal(personalInfo)
+    Object.freeze(personalInfo)
+    // Object.seal() and Object.freeze() is a method for an object which makes the object unchangable.
+    // Like that in keyword, which hepls to check that any keyword is available in object or not.
+
+
+
+    console.log('age' in personalInfo);//Expected output is true
+</script>

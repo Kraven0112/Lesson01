@@ -1,0 +1,35 @@
+body{
+    --primary-brand-color:Navy;
+    --secondary-brand-color:black;
+    --warning-brand-color:white;
+}
+h1{
+    text-align: center;
+    font-size: 2em;
+    font-family: sans-serif;
+    color: blue;
+}
+input{
+    color: var(--warning-brand-color);
+    font-family: sans-serif;
+}
+.Home{
+    background-color: var(--primary-brand-color);}
+.About{
+    background-color: var(--secondary-brand-color);
+}
+.Contact{
+    background-color: var(--primary-brand-color);
+}
+.Log-in{
+    background-color: var(--secondary-brand-color);
+}
+.Sign-in{
+    background-color: var(--primary-brand-color);
+}
+.Sign-up{
+    background-color: var(--secondary-brand-color);
+}
+.Support{
+    background-color: var(--primary-brand-color);
+}

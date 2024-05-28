@@ -1,0 +1,84 @@
+body{
+    background-color:rgb(170, 160, 160);
+}
+.container{
+    flex-wrap: wrap;
+    margin: 80px;
+   max-width:700px ;
+   background-color: white;
+    border-radius: 10px;
+    display: flex;
+    padding: 35px;
+    justify-content:space-between;
+    box-shadow: 12px 12px 10px 14px gray;
+}
+
+.container .first h1{
+    font-family: sans-serif;
+    font-size: 2rem;
+}
+.container .first p{
+    font-size: 1rem;
+    font-family: sans-serif;
+}
+.container .second{
+    padding:5px;
+}
+.container .second input[type="text"]{
+    width: 380px;
+    height: 60px;
+    border-radius: 6px;
+    margin-bottom: 8px;
+    padding-left: 5px;
+}
+.container .second .anchor {
+    margin-top: 5px;
+    text-decoration: none;
+    margin-bottom: 70px;
+}
+.container .second .anchor a{
+    font-family: sans-serif;
+    text-decoration: none;
+    color: #0b46db;
+    border-radius: 5px;
+}
+.container .second .anchor a:hover{
+    background-color: #c9d3d6;
+    border-radius: 4px;
+}
+
+.container .second .p{
+    margin-bottom: 30px;
+    font-family: sans-serif;
+}
+.container .second .p a{
+    text-decoration: none;
+    color: blue;
+    border-radius: 8px;
+}
+.container .second .p a:hover{
+    background-color: #e3e6eb;
+}
+.container .third{
+    margin-left: 100px;
+    padding-inline-start: 50px;
+}
+.container .third a{
+    margin-top: 5px;
+    text-decoration: none;
+    color: blue;
+    margin-right: 50px;
+    font-family: sans-serif;
+    font-size: 1rem;
+    border-radius: 6px;
+}
+.container .third a:hover{
+    background-color:rgb(237, 231, 231);
+}
+.container .third button{
+    height: 35px;
+    width: 70px;
+    background-color: blue;
+    border-radius: 15px;
+    border: none;
+}
