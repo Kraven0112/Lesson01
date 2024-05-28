@@ -1,0 +1,23 @@
+<script>
+    // reduce() method is a iterative method in javascript
+    // reduce method passes two parameters : accumulator and currentvalue(item)
+
+    const num = [20,30,40,10,50]
+    // debugger
+
+    const result = num.reduceRight((accumulator,item)=>{
+        return accumulator-item
+    })
+    console.log(result)
+
+
+    // Above reduce method all things are happening in iteration 
+
+    // First reduce() method will take accumulator=20 and item=30 and add them then give return value 50 
+
+    // second iteration happens then,return value will be the accumulator=50 and item=40 ,then it will again add accumulator and item then give return value=90
+
+    // third iteration return value will be the accumulator=90 and item=10, then again reduce() will add and return value=100
+
+    // fourth iteration return value will be accumulator=100 nd item=50 , then again reduce() method add accumulator and item then again return valuewill be 150 and reduce() method will pass return value to result.
+</script>

@@ -1,0 +1,12 @@
+<script>
+    const numbers=[12,13,14,15,16,1,0,12,22,13,24,34,35]
+
+    function getNum(num)//this function works using its own parameter in the function
+    {
+        return  num<0
+    }
+    const getNumber=numbers.filter(getNum) //filter method checks all possible values
+
+    console.log(getNumber) //output= all elements < 20
+    
+</script>
