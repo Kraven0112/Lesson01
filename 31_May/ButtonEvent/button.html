@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Button Event</title>
+</head>
+<body>
+    <input type="text" id="inputField">
+    <button id="btn1">Click</button>
+    <button type="reset" id="btn2">Reset</button>
+    <div id="get"></div>
+
+    <script>
+        const input = document.getElementById('inputField')
+        const button1 = document.getElementById('btn1')
+        const button2 = document.getElementById('btn2')
+        const output = document.getElementById('get')
+
+        button1.addEventListener('click',(()=>{
+           output.innerText=input.value
+        }))
+
+        button2.addEventListener('click',(()=>{
+           return input.value=" "
+        }))
+    </script>
+</body>
+</html>

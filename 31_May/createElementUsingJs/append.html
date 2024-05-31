@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Appending(Adding)</title>
+</head>
+<body>
+    <h3>Append(add) in html</h3>
+    <button onclick="append()">Append</button>
+
+    <div id="room-1">
+
+    </div>
+
+
+    <script>
+        const parent = document.getElementById('room-1')
+
+        function append()
+        {
+           for(let i=1;i<=10;i++)
+           {
+            const element1 = document.createElement('h1')
+            element1.innerHTML="Hi I am h1"
+            parent.appendChild(element1)
+           }
+        }
+    </script>
+</body>
+</html>

@@ -10,6 +10,19 @@
 
     <script>
        const parent = document.getElementById('parent')
+
+       const element1 = document.createElement('p')
+       element1.innerText="Hello I am paragraph"
+       parent.appendChild(element1)
+
+
+       const element2 = document.createElement('h1')
+       element2.innerText="Hekllo I am h1"
+       parent.appendChild(element2)
+
+       const element3 = document.createElement('img')
+       element3.src="https://images.ctfassets.net/hrltx12pl8hq/28ECAQiPJZ78hxatLTa7Ts/2f695d869736ae3b0de3e56ceaca3958/free-nature-images.jpg?fit=fill&w=1200&h=630"
+       parent.appendChild(element3)
     </script>
 </body>
 </html>
