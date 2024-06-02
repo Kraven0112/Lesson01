@@ -1,0 +1,12 @@
+<script>
+    //block scope defines that we cannot access any variable created by using let and const from outside of block
+
+    {
+        debugger
+        let age = 20
+        const name="Sushil"
+    }
+    console.log(name); //nothing will show
+    console.log(age); //error -- age is not defined
+
+</script>

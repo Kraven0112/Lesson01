@@ -1,0 +1,21 @@
+<script>
+    const name = "Sushil"
+    const age = 20
+
+    function get()
+    {
+        const x=20
+        const y=30
+        console.log(x+y)
+
+        function get2()
+        {
+            console.log(name)
+            console.log(age)
+            console.log(x)
+            console.log(y)
+        }
+        get2() // It's lexical scope is function get() and all variables in get() method ,all the outer variables 
+    }
+    get()
+</script>
