@@ -1,0 +1,41 @@
+<script>
+    //higher order function with returning  
+
+    function add()
+    {
+        const area = 40
+        const volume = 50
+        
+        function child()
+        {
+            console.log(area+volume)
+        }
+        return child
+    }
+   const add1 = add()
+
+    console.dir(add1)  //It will show scope-closure of function child()
+
+
+//higher order function with returning  
+    function got()
+    {
+        const x=122
+
+        function got2()
+        {
+            const y=122
+            
+             function got3()
+            {
+                console.log(x+y)
+            }
+            return got3
+        }
+        return got2()
+    }
+
+    const result = got()
+
+    console.dir(result) //show scope-closure of function got3()
+</script>
