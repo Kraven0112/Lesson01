@@ -1,0 +1,15 @@
+<script>
+ function get()
+ {
+    console.log("Call stack")
+ }
+
+ setTimeout(get,2000)
+ setTimeout(get,4000)
+ setTimeout(get,6000)
+ setTimeout(get,8000)
+
+//  setTimeout() and setInterval() are provoded by webApi in web browser
+
+// Operation : Web Apis------>Callback Queue -----> Call Stack
+</script>
