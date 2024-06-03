@@ -1,0 +1,41 @@
+<script>
+
+    // We can pass anything which are possible as an arguement in javscript.
+    // Higher order function
+    function cruce(x)
+    {
+
+        console.dir(x || undefined)
+    }
+
+    // callback function
+    cruce("Hello")
+    cruce({name:"Krishna",age:20,country:"Nepal"})
+    cruce(["Apple","Banana","Orange"])
+    cruce() //output is undefined
+    
+    cruce(function() //output will be anonymous()
+{
+    console.log("Hello sir g")
+})
+
+
+    cruce.age=20 //output is undefined
+
+
+
+
+    function get()
+    {
+        console.log("Happy")
+    }
+
+    const result = get
+    result()
+
+    result.age=20 //output is 20
+
+    console.log(get.age) //output is 20
+     
+
+</script>
