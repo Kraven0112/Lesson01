@@ -40,9 +40,45 @@ const months = ["January","February","March","April","May","December"]
 //     // return month.toUpperCase().includes("M" || "m")
 // })
 
+
 //using index parameter
 const filteredMonth = months.filter((month,index,array)=>{
-    return index <= 3
+    return month.length >= 5
 })
 
-console.log(filteredMonth)
+// console.log(filteredMonth)
+
+
+const students =[
+    {
+        name:"Sushil",
+        age:20
+    },
+    {
+        name:"Aman",
+        age:17
+    },
+    {
+        name:"Suresh",
+        age:18
+    },
+    {
+        name:"Phurba",
+        age:22
+    },
+    {
+        name:"Akash",
+        age:19
+    }
+]
+
+// const result3 = students.filter((student,index,array)=>{
+//     return student.age >= 18
+// }).map((student)=>{
+//     return student.name
+// }).filter((student)=>{
+//     return student.includes('S')
+// })
+
+
+// console.log(result3)
