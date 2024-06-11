@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./script.js" defer></script>
+    <style>
+        body{
+            background-color: #000000;
+            color: white;
+        }
+        p::before{
+            content:"# ";
+            color: red;
+            font-size: 25px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Difference between textContent and innerText.</h1>
+    <p>innerText does not consider style in elements </p>
+    <p>textContent considers the style of element.</p>
+    <p>innerText considers only that things which are shown in browser.</p>
+    <p>But textContent considers all the changes in code.</p>
+    <p>visibility:hidden; = opacity:0; + pointyer-events:none </p>
+</body>
+</html>
