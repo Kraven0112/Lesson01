@@ -1,0 +1,42 @@
+body{
+    background-color: #242424;
+    color: #fff;
+    font-family: sans-serif;
+}
+p::before{
+    content: "# ";
+    color: red;
+    font-size: 25px;
+}
+h2{
+    text-align: center;
+    font-family: sans-serif;
+    text-decoration: underline;
+    color: violet;
+}
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.container p{
+    width: 55px;
+    height: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(180deg,red,blue);
+    color: #fff;
+    font-weight: 800;
+    font-size: 25px;
+    border-radius: 50%;
+    animation: ball 1s linear infinite;
+}
+@keyframes ball {
+    0%{rotate: 360deg;}
+}
+.container p::before{
+    content:" " ;
+}

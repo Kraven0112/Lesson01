@@ -1,0 +1,9 @@
+body{
+    background-color: #242424;
+    color: #fff;
+}
+h2::before{
+    content: "# ";
+    color: red;
+    font-size: 25px;
+}
