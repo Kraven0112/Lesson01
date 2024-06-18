@@ -18,7 +18,7 @@ inputField.setAttribute('type','number')
 parent.classList.add('container')
 parent.append(inputField,increaseBtn,decreaseBtn)
 
-let value = inputField.value=12
+let value = inputField.value=0
 increaseBtn.addEventListener('click',()=>{
 
     output.innerHTML = value++
