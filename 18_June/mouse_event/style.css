@@ -1,0 +1,45 @@
+body{
+    background-color: #242424;
+    color: #fff;
+}
+h1{
+    text-align: center;
+}
+p::before{
+    content: "# ";
+    color: red;
+    font-size: 25px;
+}
+.topic{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.btn{
+    width: 80px;
+    height: 80px;
+    font-size: 60px;
+    border-radius: 50%;
+    position: relative;
+    left: 40%;
+    top: 30%;
+}
+.container
+{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+.element{
+    width: 60px;
+    height: 60px;
+    background-color: #777;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

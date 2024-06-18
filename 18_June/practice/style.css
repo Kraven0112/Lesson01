@@ -1,0 +1,31 @@
+body{
+    background-color: #242424;
+    color: #fff;
+}
+h1{
+    text-align: center;
+}
+p::before{
+    content: "# ";
+    color: red;
+    font-size: 25px;
+}
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+.btn{
+    width: 100px;
+    height: 40px;
+    font-size: 19px;
+    border-radius: 10px;
+}
+.input{
+    width: 35px;
+    height: 35px;
+    border-radius: 10px;
+    font-size: 20px;
+}
