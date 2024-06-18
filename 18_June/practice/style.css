@@ -28,7 +28,7 @@ p::before{
     height: 35px;
     border-radius: 10px;
     font-size: 20px;
-    padding-left: 20px;
+    padding-inline: 15px;
 }
 .h2{
     text-align: center;
