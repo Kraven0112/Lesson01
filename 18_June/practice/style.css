@@ -28,4 +28,11 @@ p::before{
     height: 35px;
     border-radius: 10px;
     font-size: 20px;
+    padding-left: 20px;
+}
+.h2{
+    text-align: center;
+    font-size: 50px;
+    margin: auto;
+    inset: 0;
 }

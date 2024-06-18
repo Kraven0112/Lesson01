@@ -10,6 +10,7 @@ decreaseBtn.innerHTML="Decrease"
 
 increaseBtn.classList.add('btn')
 decreaseBtn.classList.add('btn')
+output.classList.add('h2')
 
 inputField.classList.add('input')
 inputField.setAttribute('type','number')
@@ -17,8 +18,9 @@ inputField.setAttribute('type','number')
 parent.classList.add('container')
 parent.append(inputField,increaseBtn,decreaseBtn)
 
-let value = inputField.value
+let value = inputField.value=0
 increaseBtn.addEventListener('click',()=>{
+
     output.innerHTML = value++
 })
 
