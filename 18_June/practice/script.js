@@ -28,7 +28,6 @@ decreaseBtn.addEventListener('click',()=>{
     output.innerHTML = value--
 })
 
-
 document.body.append(parent,hr,output)
 
 
