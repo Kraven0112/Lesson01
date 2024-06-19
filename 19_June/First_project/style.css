@@ -1,0 +1,90 @@
+body{
+    background-color: #2424;
+    font-family: sans-serif;
+}
+h1,h4{
+    text-align: center;
+    color: rgb(85, 196, 85);
+}
+.container{
+    width: 400px;
+    height: 450px;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 10px;
+    position: absolute;
+    margin: auto;
+    inset:0;
+}
+.top{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.top img{
+    width: 30px;
+    height: 30px;
+}
+.top h3{
+    font-size: 25px;
+}
+.level {
+    width: 100%;
+    display: flex;
+    border: 1px solid;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    background-color: aquamarine;
+}
+.level span{
+    width: 150px;
+    height:15px;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container hr,p{
+    margin-top: 0;
+    color: rgb(72, 210, 72);
+    text-align: center;
+    font-size: 17px;
+}
+
+input[type='radio']
+{
+   accent-color: green;
+}
+label{
+    color: green;
+    font-size: 17px;
+}
+
+.firstwork{
+    width: 90%;
+    padding: 20px;
+    border: 1px solid;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+.secondwork{
+    width: 90%;
+    padding: 20px;
+    border: 1px solid;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+.thirdwork{
+    width: 90%;
+    padding: 20px;
+    border: 1px solid;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+.out{
+    background-color: green;
+}
+.labelin{
+    text-decoration: line-through;
+}
