@@ -1,0 +1,78 @@
+h1{
+    text-align: center;
+    color: greenyellow;
+}
+.container{
+    width: 400px;
+    border: 2px solid #fff ;
+    box-shadow: 0 0 14px 0.5px;
+    margin-inline: auto;
+    border-radius: 10px;
+    padding: 20px;
+}
+.head{
+    display: flex;
+}
+.head h2{
+    color: green;
+}
+.head img{
+    width: 30px;
+    height: 30px;
+    margin-top: 16px;
+}
+.progressbar{
+    width: 100%;
+    height: 20px;
+    border:1px solid;
+    border-radius: 10px;
+}
+.progressbar .bachcha{
+    width: 60%;
+    height: 100%;
+    background-color: yellowgreen;
+    border-radius: 10px;
+}
+.error{
+    font-family: sans-serif;
+    color: red;
+    font-size: 14px;
+    display: none;
+}
+.firstgoal{
+    padding: 10px;
+    border: 1px solid;
+    border-radius: 5px;
+    margin-block: 20px;
+}
+.firstgoal input:nth-child(1)
+{
+    width: 30px;
+    height: 30px;
+    vertical-align: middle;
+    flex-shrink: 0;
+    cursor: pointer;
+}
+.firstgoal input:nth-child(2)
+{
+  font-size: 18px;
+  width: 80%;
+  height: 30px;
+  border: none;
+  outline: none;
+  vertical-align: middle;
+}
+.bottom{
+    text-align: center;
+    font-family:sans-serif;
+    color: green;
+}
+.last{
+    text-align: center;
+    font-family: sans-serif;
+    color:green;
+}
+.completed #inputfield{
+    color: #48A300;
+    text-decoration-line:line-through ;
+}
