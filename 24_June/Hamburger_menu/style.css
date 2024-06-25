@@ -2,6 +2,7 @@
     box-sizing: border-box;
 }
 body{
+    padding-bottom: 8px;
     margin: 0;
     background-color:#F6F0EB;
     font-family:'Poppins',sans-serif;
@@ -11,12 +12,16 @@ a{
     color: inherit;
 }
 header{
+    width: 100%;
+    height: 70px;
     background-color: #fff;
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 24px 32px;
     cursor: pointer;
+    position: fixed;
+    top: 0;
 }
 nav{
     display: flex;
@@ -30,8 +35,18 @@ nav a{
     font-size: 17px;
     color: #242424;
 }
+.vertical span i {
+    font-size: 30px;
+    margin-left: 50px;
+}
+header .vertical{
+   display: none;
+}
+.vertical span{
+    font-size: 50px;
+}
 .logo{
-    width: 90px;
+    width: 70px;
 }
 .logo img{
     width: 100%;
@@ -43,6 +58,7 @@ nav a{
 .imageContainer img{
     width: 100%;
     cursor: pointer;
+    border-radius: 8px;
 }
 .hero-section{
     margin-top:10px ;
@@ -60,4 +76,147 @@ main{
 .top{
    text-align: right;
    margin-right: 10px;
+}
+.arrow{
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.arrow img{
+    width: 60px;
+    height: 60px;
+}
+
+.showMenu{
+    width: 250px;
+    padding-bottom: 5px;
+    position: absolute;
+    font-weight: 600;
+    top: 10px;
+    right: 15px;
+    display: flex;
+    align-items:center;
+    justify-content: flex-start;
+    gap: 20px;
+    flex-direction: column;
+    background-color: rgba(246, 248, 249, 0.9);
+    border-radius: 10px;
+}
+
+@media(max-width:768px)
+{
+    nav a{
+        display: none;
+    }
+    nav .menu{
+        display: block;
+    }
+    header{
+        height: 75px;
+    }
+    .logo{
+        width: 80px;
+    }
+    .logo img{
+        width: 100%;
+    }
+    .laamo{
+        height: 400px;
+    }
+    
+    .hero-section p{
+        font-size: 16px;
+    }
+}
+@media (min-width:769px) and (max-width:1024px)
+{
+    nav .menu{
+        display: none;
+    }
+    header{
+        height: 85px;
+    }
+    .logo{
+        width:100px ;
+    }
+    .logo img{
+        width: 100%;
+    }
+    .imageContainer{
+        max-width: 1440px;
+        margin: 0 auto;
+    }
+}
+@media(min-width:1025px) and (max-width:1440px)
+{
+    nav .menu{
+        display: none;
+    }
+    header{
+        height: 120px;
+    }
+    .imageContainer{
+        max-width: 1690px;
+        margin: 0 auto;
+    }
+    nav a{
+        font-size: 27px;
+    }
+    .logo{
+        width:120px ;
+    }
+    .logo img{
+        width: 100%;
+    }
+    .hero-section p{
+        font-size: 23px;
+    }
+}
+@media(min-width:1440px) and (max-width:2560px)
+{
+    nav .menu{
+        display: none;
+    }
+    .imageContainer{
+        max-width: 4090px;
+        margin: 0 auto;
+    }
+    header{
+        height: 150px;
+    }
+    .hero-section p{
+        font-size: 40px;
+    }
+    .logo{
+        width: 150px;
+    }
+    .logo img{
+        width: 100%;
+    }
+}
+@media(min-width:2561px) and (max-width:2900px)
+{
+    nav .menu{
+        display: none;
+    }
+    .imageContainer{
+        max-width: 8090px;
+        margin: 0 auto;
+    }
+    header{
+        height: 180px;
+    }
+    .hero-section p{
+        font-size: 80px;
+    }
+    .logo{
+        width: 170px;
+    }
+    .logo img{
+        width: 100%;
+    }
+    nav a{
+        font-size: 50px;
+    }
 }
