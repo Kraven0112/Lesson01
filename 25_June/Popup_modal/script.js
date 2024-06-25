@@ -24,6 +24,7 @@ subscribeBtn.addEventListener('click',()=>{
         modal.style.display="none"
         inputField.value=""
         openpopup.style.display="none"
+        error.style.display="none"
     }
 })
 
