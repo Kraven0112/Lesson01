@@ -170,7 +170,7 @@ main{
         width: 100%;
     }
     .hero-section p{
-        font-size: 23px;
+        font-size: 18px;
     }
 }
 @media(min-width:1440px) and (max-width:2560px)
@@ -186,7 +186,7 @@ main{
         height: 150px;
     }
     .hero-section p{
-        font-size: 40px;
+        font-size: 25px;
     }
     .logo{
         width: 150px;
@@ -208,7 +208,7 @@ main{
         height: 180px;
     }
     .hero-section p{
-        font-size: 80px;
+        font-size: 30px;
     }
     .logo{
         width: 170px;
