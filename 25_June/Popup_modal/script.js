@@ -10,8 +10,10 @@ const back = document.querySelector('.back')
 
 openpopup.addEventListener('click',()=>{
     modal.style.display="block"
+    openpopup.style.display="none"
     close.addEventListener('click',()=>{
         modal.style.display="none"
+        openpopup.style.display="block"
     })
 })
 subscribeBtn.addEventListener('click',()=>{
@@ -32,6 +34,7 @@ letter.addEventListener('click',()=>{
     alert("Thankyou for your support and subscription.")
 })
 back.addEventListener('click',()=>{
-     openpopup.style.display="block"
+     openpopup.style.display="none"
      newsletter.style.display="none"
+     modal.style.display="block"
 })

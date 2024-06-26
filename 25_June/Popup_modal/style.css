@@ -1,6 +1,6 @@
 body{
     background-color: #2424;
-    font-family: sans-serif;
+    font-family: monospace;
 }
 h1{
     display: flex;
@@ -8,10 +8,10 @@ h1{
     justify-content: center;
 }
 .open{
-    width: 120px;
+    width: 150px;
     height: 40px;
     border-radius: 16px;
-    font-family: sans-serif;
+    font-family: monospace;
     font-size: 18px;
     border: none;
     cursor: pointer;
@@ -38,6 +38,7 @@ h1{
     left: 10px;
     font-family: 150px;
     font-weight: bolder;
+    font-size: 40px;
     cursor: pointer;
 }
 .newsletter .letter{
@@ -61,6 +62,7 @@ h1{
     margin: auto;
     background-color: #2424;
     cursor: pointer;
+    box-shadow: 0px 5px 0px 3px rgba(0, 0, 0, 0.5) ;
 }
 .close-icon{
     position: absolute;
@@ -104,6 +106,7 @@ h1{
     border-radius: 16px;
     padding-left: 5px;
     font-size:19px;
+    font-family: monospace;
 }
 .subscribe button{
     font-size: 20px;
@@ -111,6 +114,7 @@ h1{
     border: none;
     outline: none;
     border-radius: 16px;
+    font-family: monospace;
 }
 .error{
     color: #842525;
@@ -119,5 +123,5 @@ h1{
     left: 20px;
     display: none;
     font-size: 16px;
-    font-family: sans-serif;
+    font-family:monospace;
 }
