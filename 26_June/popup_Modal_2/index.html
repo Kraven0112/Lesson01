@@ -8,7 +8,9 @@
     <script src="./script.js" defer></script>
 </head>
 <body>
-    <p><button class="open-popup">Click to open</button></p>
+    <div class="openBtn">
+        <button class="open-popup">Click to open</button>
+    </div>
     <div class="modal">
         <span class="close-icon">&times;</span>
 
@@ -26,10 +28,17 @@
         <p class="error">!please enter your email first</p>
 
         <div class="subscribe">
-            <input type="email" placeholder="EMAIL ADDRESS">
+            <input type="email" placeholder="EMAIL ADDRESS" class="email">
             <button class="subscribeBtn">Subscribe</button>
         </div>
 
+    </div>
+
+    <div class="newsletter">
+        <span class="goback">&leftarrow;</span>
+        <div class="letter">
+            <h2>Get Newsletter</h2>
+        </div>
     </div>
 </body>
 </html>

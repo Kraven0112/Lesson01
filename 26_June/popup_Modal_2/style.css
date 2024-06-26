@@ -1,16 +1,19 @@
 body{
     background-color: #2424;
 }
-p{
-    text-align: center;
+.openBtn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
-p .open-popup{
+.open-popup{
     width: 120px;
     height: 40px;
     border-radius: 16px;
     border: none;
     font-size: 17px;
     font-weight: 600;
+    cursor: pointer;
 }
 .modal{
     width:400px;
@@ -23,14 +26,15 @@ p .open-popup{
     inset:0;
     box-shadow: 0px 5px 0px 3px rgba(0, 0, 0, 0.5);
     transform: scale(0);
+    cursor: pointer;
 }
 .open{
     transform: scale(1);
-    transition:  transform 1.5s;
+    transition:  transform 0.5s;
 }
 .close{
     transform: scale(0);
-    transition: transform 1.5s;
+    transition: transform 0.3s;
 }
 .close-icon{
     font-size:40px;
@@ -84,13 +88,53 @@ p .open-popup{
     border-radius: 16px;
     border: none;
     outline: none;
-    font-size: 19px;
+    font-size: 15px;
     font-family: monospace;
     padding-left: 8px;
 }
 .subscribe button{
     height: 40px;
-    font-size: 19px;
+    font-size: 17px;
     border-radius: 16px;
     border: none;
+    font-family: monospace;
+}
+.newsletter{
+    width: 400px;
+    height: 200px;
+    background-color: #2424;
+    border-radius: 16px;
+    position: fixed;
+    inset: 0;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transform: scale(0);
+}
+.newsopen{
+    transform: scale(1);
+    transform: transform 0.5s;
+}
+.newsclose{
+    transform: scale(0);
+    transition: transform 0.5s;
+}
+.newsletter .letter{
+    width: 200px;
+    border-radius: 16px;
+    background-color: rgba(29, 66, 141, 0.6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-family: monospace;
+}
+.newsletter .goback{
+    position: absolute;
+    left: 10px;
+    top: 5px;
+    font-size: 30px;
+    font-weight:bolder;
 }
