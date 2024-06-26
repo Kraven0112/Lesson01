@@ -1,0 +1,96 @@
+body{
+    background-color: #2424;
+}
+p{
+    text-align: center;
+}
+p .open-popup{
+    width: 120px;
+    height: 40px;
+    border-radius: 16px;
+    border: none;
+    font-size: 17px;
+    font-weight: 600;
+}
+.modal{
+    width:400px;
+    height: 200px;
+    background-color: #2424;
+    border-radius: 16px;
+    padding: 10px;
+    position: fixed;
+    margin: auto;
+    inset:0;
+    box-shadow: 0px 5px 0px 3px rgba(0, 0, 0, 0.5);
+    transform: scale(0);
+}
+.open{
+    transform: scale(1);
+    transition:  transform 1.5s;
+}
+.close{
+    transform: scale(0);
+    transition: transform 1.5s;
+}
+.close-icon{
+    font-size:40px;
+    position: absolute;
+    top: 0;
+    right: 8px;
+    font-weight: 700;
+}
+.content{
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content:flex-end;
+}
+.image-content img{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    position: absolute;
+    top:-65px;
+    left:-5px;
+    animation: logo 1s infinite linear;
+}
+@keyframes logo {
+    0%{rotate: 360deg;}
+}
+.content .text-content{
+    font-family: monospace;
+    font-weight: 700;
+    text-align: center;
+}
+.error{
+    position: absolute;
+    font-family: monospace;
+    color: rgb(172, 18, 18);
+    display: none;
+}
+.subscribe{
+    width: 100%;
+    height: 40px;
+    border-radius: 16px;
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #fff;
+}
+.subscribe input{
+    width: 300px;
+    height: 38px;
+    border-radius: 16px;
+    border: none;
+    outline: none;
+    font-size: 19px;
+    font-family: monospace;
+    padding-left: 8px;
+}
+.subscribe button{
+    height: 40px;
+    font-size: 19px;
+    border-radius: 16px;
+    border: none;
+}
