@@ -115,6 +115,14 @@ body{
     padding-inline: 60px;
     padding-block: 15px;
     transform: scale(0);
+    transition:transform 0.8s;
+}
+.state-1 .goback{
+    font-size: 30px;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    cursor: pointer;
 }
 .state-1 .title{
     margin-top: 10px;
@@ -151,6 +159,7 @@ body{
     align-items: center;
     justify-content: center;
     border-radius: 6px;
+    font-size: 18px;
 }
 .state-1 .timer{
     background-color: green;
@@ -159,6 +168,7 @@ body{
     border-radius: 5px;
     color: #fff;
     margin-left: auto;
+    visibility: hidden;
 }
 
 .state-1 .option{
@@ -178,7 +188,7 @@ body{
 }
 .state-1 .option p{
     font-size: 19px;
-    font-family: cursive;
+    font-family: monospace;
 }
 .state-1 .buttong{
     margin-top: 20px;
