@@ -1,0 +1,7 @@
+.open{
+    transform: scale(1);
+    transition: transform 1.5s;
+}
+.none{
+    display: none;
+}

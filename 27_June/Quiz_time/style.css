@@ -1,0 +1,197 @@
+body{
+    font-family: sans-serif;
+}
+.startingbefore{
+    width: 400px;
+    height: 200px;
+    background-color: #e1d7d7;
+    position: fixed;
+    inset: 0;
+    margin: auto;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 16px;
+}
+.startingbefore .text{
+    background-color:rgb(95, 154, 23);
+    width: 250px;
+    font-size: 45px;
+    color: #fff;
+    font-family: monospace;
+    border-bottom-left-radius: 16px;
+    border-top-right-radius: 16px;
+    text-align: center;
+    box-shadow: 0px 2px 0px 5px rgba(0, 0, 0, 0.3);
+}
+.startingbefore .startbefore{
+    width: 150px;
+    height: 35px;
+    font-size: 18px;
+    font-weight: 700;
+    background-color:green;
+    border-radius: 16px;
+    color: #fff;
+    border: none;
+}
+.emoji-1{
+    position: absolute;
+    left: 10px;
+    top:0;
+    font-size: 45px;
+}
+.emoji-2{
+    position: absolute;
+    right: 10px;
+    top:0;
+    font-size: 45px;
+}
+
+
+
+.startingafter{
+    width: 400px;
+    height: 240px;
+    background-color: #e1d7d7;
+    position: fixed;
+    inset: 0;
+    margin: auto;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 16px;
+    display: none;
+}
+.startingafter .textafter{
+    background-color:rgb(95, 154, 23);
+    width: 250px;
+    font-size: 45px;
+    color: #fff;
+    font-family: monospace;
+    border-bottom-left-radius: 16px;
+    border-top-right-radius: 16px;
+    text-align: center;
+    box-shadow: 0px 2px 0px 5px rgba(0, 0, 0, 0.3);
+}
+.startingafter .startafter{
+    width: 150px;
+    height: 35px;
+    font-size: 18px;
+    font-weight: 700;
+    background-color:green;
+    border-radius: 16px;
+    color: #fff;
+    border: none;
+}
+.emoji-I{
+    position: absolute;
+    left: 10px;
+    top:0;
+    font-size: 45px;
+}
+.emoji-II{
+    position: absolute;
+    right: 10px;
+    top:0;
+    font-size: 45px;
+}
+.startingafter .score{
+    font-size: 19px;
+    font-weight: 600;
+}
+
+
+
+.state-1{
+    width: 500px;
+    background-color: rgb(213, 235, 180);
+    margin-inline: auto;
+    margin-block: auto;
+    border-radius: 16px;
+    padding-inline: 60px;
+    padding-block: 15px;
+    transform: scale(0);
+}
+.state-1 .title{
+    margin-top: 10px;
+    margin-left: 10px;
+    width: 100px;
+    background-color: yellow;
+    padding: 20px;
+    border-top-right-radius: 16px;
+    border-bottom-left-radius: 16px;
+    font-size: 21px;
+}
+.state-1 .firstdiv{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+}
+.state-1 .firstdiv img{
+    width: 35px;
+    margin-right: 20px;
+}
+.state-1 .count{
+    margin-top: 0;
+    width: 80px;
+    text-align: center;
+    background-color: orange;
+    margin-left: auto;
+    margin-right: 5px;
+}
+.state-1 .question{
+    background-color: #fff;
+    height:60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 6px;
+}
+.state-1 .timer{
+    background-color: green;
+    width: 80px;
+    text-align: center;
+    border-radius: 5px;
+    color: #fff;
+    margin-left: auto;
+}
+
+.state-1 .option{
+    background-color: #fff;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+}
+.state-1 .option div{
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+.state-1 .option p{
+    font-size: 19px;
+    font-family: cursive;
+}
+.state-1 .buttong{
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.state-1 .buttong .nextBtn{
+    width: 100px;
+    height: 30px;
+    font-size: 18px;
+    font-weight: 600;
+    background-color:transparent ;
+    border: none;
+    color: green;
+}
