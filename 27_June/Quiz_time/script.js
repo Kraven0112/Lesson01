@@ -16,6 +16,9 @@ const optiondiv2 = document.querySelector('.secondoption')
 const optiondiv3 = document.querySelector('.thirdoption')
 const optiondiv4 = document.querySelector('.fourthoption')
 
+const question = document.querySelector('.question')
+const option = document.querySelector('.option')
+
 const questionsArray = [
     'Which element is used to highlight text in html ?',
     'Which element is used to put javascript in html ?',
@@ -40,7 +43,10 @@ goback.addEventListener('click',()=>{
     option3.innerHTML = ""
     option4.innerHTML = ""
     getquestion.innerHTML=""
+    question.style.visibility ="hidden"
+    option.style.visibility ="hidden"
 })
+
 
 let num = 0
 nextBtn.addEventListener('click',()=>{
@@ -49,6 +55,8 @@ nextBtn.addEventListener('click',()=>{
             num = 0
         }
     getquestion.innerHTML=questionsArray[num]
+    question.style.visibility ="visible"
+    option.style.visibility ="visible"
 
     if(num == 0)
         {
@@ -93,16 +101,22 @@ nextBtn.addEventListener('click',()=>{
     num++
 })
 
-let speaker = document.querySelector('.speaker')
+function nextSound(){
+    const next = new Audio("next-level-160613.mp3")
+    window = next.play()
+}
+
+ nextBtn.addEventListener('click',nextSound)
+
 
 function wrongsound(){
     const wrong = new Audio("wrongAnswer.mp3")
-    speaker = wrong.play()
+    window = wrong.play()
 }
 
 function correctsound(){
     const correct = new Audio("correct-6033.mp3")
-    speaker = correct.play()
+    window = correct.play()
 }
 
 
