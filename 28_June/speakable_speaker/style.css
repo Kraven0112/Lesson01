@@ -1,18 +1,62 @@
 body{
     background-color: #2424;
 }
-#play{
+.container{
+    width: 400px;
+    height: 550px;
+    border-radius: 16px;
+    background-color: #242424;
     position: fixed;
     inset: 0;
     margin: auto;
-    width: 450px;
-    height: 200px;
-    border: 5px solid #fff;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 18px;
-    font-family: monospace;
-    font-weight: 800;
-    border-radius: 16px;
+    flex-direction: column;
+    gap: 10px;
+}
+.container .title{
+    color: #fff;
+   margin-top: -25px;
+}
+.container .music{
+    width: 340px;
+    height: 300px;
+    border-radius: 5px;
+}
+.buttons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: 8px;
+}
+.buttons button{
+    margin-top: 15px;
+    border-radius: 50%;
+}
+.buttons button img{
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+}
+
+@media(min-width:345px) and (max-width:768px)
+{
+    .container{
+        width: 460px;
+        height: 650px;
+        gap: 15px;
+        margin: auto;
+    }
+    .container .music{
+        width: 370px;
+        height: 420px;
+    }
+    .buttons{
+        gap: 18px;
+    }
+    .buttons button{
+        margin-top: 25px;
+    }
 }
