@@ -64,7 +64,7 @@ nextBtn.addEventListener('click',()=>{
     else if(num == 2)
         {
             questionNo.innerHTML=`${num+1}/5`
-            option1.innerText="To add new children element in parent element"
+            option1.innerText="To add new child element in parent element"
             option2.innerText = "To delete child element"
             option3.innerText = "To remove child element"
             option4.innerText = "To move child element"

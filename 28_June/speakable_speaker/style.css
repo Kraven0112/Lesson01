@@ -1,0 +1,14 @@
+body{
+    background-color: #2424;
+}
+#play{
+    position: fixed;
+    inset: 0;
+    margin: auto;
+    width: 450px;
+    height: 70px;
+    font-size: 18px;
+    font-family: monospace;
+    font-weight: 800;
+    border-radius: 16px;
+}
