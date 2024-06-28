@@ -14,19 +14,23 @@ const music = [
 let num = 0
 let audio = new Audio(music[num])
 
+
 play.addEventListener('click',()=>{
     num++
     if(num == music.length)
         {
             num = 0
         }
-    audio.paused ? audio.play() : audio.pause()
-    
+   audio.play()
 })
+
 pause.addEventListener('click',()=>{
     audio.paused ? audio.play() : audio.pause()
 })
 
-
+nextbtn.addEventListener('click',()=>{
+   audio = new Audio(music[num++])
+   audio.play()
+})
 
 
