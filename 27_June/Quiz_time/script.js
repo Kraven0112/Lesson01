@@ -11,6 +11,11 @@ const option2 = document.querySelector('.option2')
 const option3 = document.querySelector('.option3')
 const option4 = document.querySelector('.option4')
 
+const optiondiv1 = document.querySelector('.firstoption')
+const optiondiv2 = document.querySelector('.secondoption')
+const optiondiv3 = document.querySelector('.thirdoption')
+const optiondiv4 = document.querySelector('.fourthoption')
+
 const questionsArray = [
     'Which element is used to highlight text in html ?',
     'Which element is used to put javascript in html ?',
@@ -87,3 +92,56 @@ nextBtn.addEventListener('click',()=>{
         }
     num++
 })
+
+let speaker = document.querySelector('.speaker')
+
+function wrongsound(){
+    const wrong = new Audio("wrongAnswer.mp3")
+    speaker = wrong.play()
+}
+
+function correctsound(){
+    const correct = new Audio("correct-6033.mp3")
+    speaker = correct.play()
+}
+
+
+if(questionsArray[0])
+    {
+        option1.addEventListener('click',correctsound)
+        option2.addEventListener('click',wrongsound)
+        option3.addEventListener('click',wrongsound)
+        option4.addEventListener('click',wrongsound)
+    }
+
+if(questionsArray[1])
+    {
+        option1.addEventListener('click',correctsound)
+        option2.addEventListener('click',wrongsound)
+        option3.addEventListener('click',wrongsound)
+        option4.addEventListener('click',wrongsound)
+    }
+
+ if(questionsArray[2])
+    {
+        option1.addEventListener('click',correctsound)
+        option2.addEventListener('click',wrongsound)
+        option3.addEventListener('click',wrongsound)
+        option4.addEventListener('click',wrongsound)
+    }
+
+if(questionsArray[3])
+    {
+        option3.addEventListener('click',correctsound)
+        option2.addEventListener('click',wrongsound)
+        option1.addEventListener('click',wrongsound)
+        option4.addEventListener('click',wrongsound)
+    }
+
+if(questionsArray[4])
+    {
+        option1.addEventListener('click',correctsound)
+        option2.addEventListener('click',wrongsound)
+        option3.addEventListener('click',wrongsound)
+        option4.addEventListener('click',wrongsound)
+    }

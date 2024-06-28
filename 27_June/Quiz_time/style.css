@@ -116,6 +116,7 @@ body{
     padding-block: 15px;
     transform: scale(0);
     transition:transform 0.8s;
+    cursor: pointer;
 }
 .state-1 .goback{
     font-size: 30px;
@@ -187,6 +188,7 @@ body{
     border-radius: 5px;
 }
 .state-1 .option p{
+    width: 100%;
     font-size: 19px;
     font-family: monospace;
 }
