@@ -7,51 +7,53 @@ body{
     border-radius: 16px;
     background-color: #242424;
     position: fixed;
+    padding-block:10px;
     inset: 0;
     margin: auto;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    gap: 10px;
+    gap: 15px;
 }
 .container .title{
     color: #fff;
    margin-top: -25px;
 }
 .container .music{
-    width: 340px;
-    height: 300px;
-    border-radius: 5px;
+    width: 330px;
+    height: 330px;
+    border: 8px solid #fff;
+    border-radius: 50%;
+    box-shadow: 0 10px 60px rgba(255, 26, 26, 0.22);
 }
 .buttons{
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: row;
-    gap: 8px;
+    gap:20px;
 }
 .buttons button{
+    width: 70px;
+    height: 70px;
+    font-size: 25px;
     margin-top: 15px;
     border-radius: 50%;
-}
-.buttons button img{
-    width: 45px;
-    height: 45px;
-    border-radius: 50%;
+    box-shadow: 0 10px 60px rgba(255, 26,26, 0.22);
 }
 
 @media(min-width:345px) and (max-width:768px)
 {
     .container{
         width: 460px;
-        height: 650px;
         gap: 15px;
         margin: auto;
+        padding-block:20px;
     }
     .container .music{
-        width: 370px;
-        height: 420px;
+        width: 350px;
+        height: 350px;
     }
     .buttons{
         gap: 18px;
