@@ -1,0 +1,13 @@
+body{
+    background-color: #242424;
+}
+
+.image{
+    width: 400px;
+    height: 400px;
+    position: fixed;
+    inset: 0;
+    margin: auto;
+    border: 8px solid #fff;
+    box-shadow: 5px 50px 80px 20px rgba(255, 26, 26, 0.22);
+}
