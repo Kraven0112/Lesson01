@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="./script.js" defer></script>
+</head>
+<body>
+    <h1>Promise in javascript</h1>
+    <p>A promise is a special type of object which represents the eventual completion of an asynchronous operation and its resulting value.</p>
+    <p>A promise object is created by browser, so it cannnot use thread of javascript.</p>
+    <p>It is the way to handle the asynchronous in readable and manageable form in javascript.</p>
+    <p>Promise always take callback function.</p>
+    <p>There are three states in promise -- pending,resolve,reject.</p>
+    <p>Promise is an object which contains promisestate,prototype and promiseResult</p>
+    <p>When promise is resolved the promisestate is fulfilled.</p>
+    <p>when the peomise is resolved .then() method is used to control the promise.</p>
+    <p>when the promise rejected the .catch() method is used to handle the promise.</p>
+    <p>.then() and .catch() always takes argument of a callback function.</p>
+    <p>.then() and .catch() return new promise</p>
+    <p>.catch() provides callback when the promise is rejected</p>
+    <p>.finally() method is used to settle the promise. it is called event promise is rejected or resolved.</p>
+    <p>.finally() method does not get data from Promise. It only logs message every promisestate in promise.</p>
+    <p>.then() .catch()  and .finally() are microtasks handle by webAPI not by javascript main thread.</p>
+</body>
+</html>
