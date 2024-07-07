@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="./script.js" defer></script>
+</head>
+<body>
+    <h1>Fixing callback hell using fetch in javascript.</h1>
+    <p>fetch() is modern way of fetching data or resources from another server. </p>
+    <p>fetch() returns promise.</p>
+    <p>fetch() method accepts parameter like url,object{mathod,headers,body},etc</p>
+    <p>fetch() is faster than xmlhttprequest because there are .then() and .catch() methods which are known as microtasks and get more priority than other in webAPI  in javascript.</p>
+    <p>All async operation in javascript are handled by webApi in javascript, because javascript has only one thread to handle only one synchronous operation.</p>
+    <p>when javascript get asynhcronous operation, it passes those async opeartion to a browser's threads to handle.</p>
+    <p>fetch() method has default requestMethod which is GET method.</p>
+    <p>.then() method is used to handle resolve of api while using along with fetch() method to retrieve data from server.</p>
+    <p>.catch() method is used to handle errors while using along with fetch() method. It also return callback to handle error when fetching data gets rejected from another server.</p>
+
+
+    <h2 class="firstname"></h2>
+    <h2 class="lastname"></h2>
+    <h2 class="middlename"></h2>
+    <h2 class="age"></h2>
+    <h2 class="address"></h2>
+    <h2 class="phone"></h2>
+    <img src="" class="image">
+</body>
+</html>
