@@ -1,0 +1,15 @@
+body{
+    background-color: #2424;
+    font-family: monospace;
+}
+p{
+    font-size: 19px;
+}
+p::before{
+    content: "# ";
+    color: red;
+    font-size: 25px;
+}img{
+    width: 400px;
+    height: 400px;
+}
