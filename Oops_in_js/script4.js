@@ -26,4 +26,4 @@ CreatePrototype.prototype.getYourBirthYear=function(){
 
 
 const userMe = new CreatePrototype("Me","Mine",23)
-const userYou = new 
+const userYou = new CreatePrototype("You","Your",22)
