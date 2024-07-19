@@ -1,0 +1,110 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    background-color: #242424;
+    font-family: 'Poppins',sans-serif;
+    color: #fff;
+}
+.header-container{
+    box-shadow: 0px 3px 20px rgba(10, 165, 140, 0.3);
+    background-color: #2424;
+    border-radius: 16px;
+    margin-top: 20px;
+}
+.title{
+    max-width:1200px;
+    margin-inline: auto;
+    display: flex;
+    justify-content: center;
+    font-family: monospace;
+}
+.title h1{
+    filter: drop-shadow(0px 4px 8px);
+    color: greenyellow;
+}
+.icon-container{
+    max-width:1200px;
+    margin-inline: auto;
+    border-radius: 16px;
+    box-shadow: 0px 3px 20px rgba(10, 165, 140, 0.3);
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 15px;
+    padding:100px 10px;
+    border-right: 5px solid chartreuse;
+    border-top: 5px solid red;
+    border-left: 5px solid blue;
+    border-bottom: 5px solid orangered;
+}
+.icon{
+    width: 100px;
+    height: 100px;
+    margin-inline:auto;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    background-color: #fff;
+    rotate: 10deg;
+    color: #242424;
+    box-shadow: 0px 2px 10px rgb(225, 219, 219);
+    border-right: 4px solid chartreuse;
+    border-top: 4px solid red;
+    border-left: 4px solid blue;
+    border-bottom: 4px solid orangered;
+}
+.icon:hover{
+    background-color: #534eeb;
+    color: #fff;
+    transition:0.3s transform;
+    transform: scale(1.2);
+    font-size: 35px;
+}
+.about{
+    max-width: 1200px;
+    margin-inline: auto;
+    margin-top: 30px;
+    box-shadow: 0px 3px 20px rgba(10, 165, 140, 0.3);
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    flex-direction:column;
+    padding: 20px 10px;
+    gap: 25px;
+    border-radius: 16px;
+}
+span{
+    color: greenyellow;
+    font-size: 25px;
+    font-weight: 700;
+    text-decoration-line: underline;
+}
+.aboutme{
+    max-width: 1000px;
+    margin-inline: auto;
+    box-shadow: 0px 3px 20px rgba(168, 171, 170, 0.3);
+    border-radius: 16px;
+    padding: 15px;
+}
+@media(min-width:320px) and (max-width:720px){
+    .title h1{
+        font-size: 15.5px;
+    }
+    .icon-container{
+        gap: 25px;
+    }
+    .icon{
+        width: 150px;
+        height: 150px;
+        font-size: 50px;
+        background-color: #7280ef;
+        color: #fff;
+    }
+}
